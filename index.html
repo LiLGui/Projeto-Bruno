@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/modalStyles.css">
+    <link rel="stylesheet" href="assets/css/modalScreen.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bruno Editor</title>
+</head>
+<body>
+    <!-- sessão modal offs -->
+    <div id="screen" class="ModalScreenView">
+        <div class="clickClose" id="closeScreenToo"></div>
+        <div class="screenView">
+            <!-- <div class="informaScreen">
+                <h2 id="Title">Title Vídeo 01</h2>
+            </div> -->
+            <div id="closeScrenn"><i class="ri-close-line"></i></div>
+            <div class="videoView">
+                <div class="capsuleView">
+                    <div class="embed">
+                        <iframe id="linkVideo" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalOne" class="ModalMenuContact">
+        <div class="ModalContactBox">
+            <div id="CloseContact" class="close"><i class="ri-close-line"></i></div>
+            <div class="icon">
+                <h2>Contact me 😊</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://wa.me/5587981292970?text=Ol%C3%A1%2C+tenho+interesse+no+seu+servi%C3%A7o." target="_blank"><i class='bx bxl-whatsapp' ></i> Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/brunol.editor/" target="_blank"><i class='bx bxl-instagram' ></i> Instagram</a></li>
+                </ul>
+            </nav>
+            <p class="ClickMailClass">Caso queira realizar um orçamento clique <a id="ClickMail" href="https://drive.google.com/file/d/1QD7apwX1Efq1AIlGcO_rw6FZZPkvKyss/view" target="_blank">AQUI</a></p>
+        </div>
+    </div>
+    <div id="MenuModal" class="menuModal">
+        <div class="linksModal">
+            <ul>
+                <li><a onclick="FechaMenu()"><i class="ri-home-2-line"></i> Home</a></li>
+                <li><a href="https://drive.google.com/file/d/1QD7apwX1Efq1AIlGcO_rw6FZZPkvKyss/view" target="_blank"><i class="ri-cursor-line"></i> Orçamento</a></li>
+                <li><a id="OpenContact2"><i class="ri-contacts-fill"></i> Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- fim modal -->
+    <header class="top_page">
+        <div class="logo">
+            <a href="#"><h2>Bruno Editor</h2></a>
+        </div>
+        <nav class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://drive.google.com/file/d/1QD7apwX1Efq1AIlGcO_rw6FZZPkvKyss/view" target="_blank">Orçamento</a></li>
+                <li><a id="OpenContact">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- botão menu responsivo -->
+        <div onclick="AbreMenu()" id="DesceMenu" class="linkOcult"><i class='bx bx-menu'></i></div>
+    </header>
+    <main class="content">
+        <section class="content_left">
+            <div class="box" onclick="OpenModal(1)">
+                <div class="image_box">
+                    <!-- imagem da box -->
+                    <img src="assets/media/image01.jpg" alt="imagemBox">
+                </div>
+                <div class="options_box">
+                    <!-- opções da box -->
+                    <h4>HOW TO GET A MAN 📲</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, beatae!</p>
+                </div>
+            </div>
+
+            <div class="box" onclick="OpenModal(2)">
+                <div class="image_box">
+                    <!-- imagem da box -->
+                    <img src="assets/media/image02.jpg" alt="imagemBox">
+                </div>
+                <div class="options_box">
+                    <!-- opções da box -->
+                    <h4>I HATE FACEBOOK</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis fugit esse sequi rem quo iure veritatis dolor exercitationem incidunt dignissimos eum, quasi itaque, cum temporibus quam nesciunt unde voluptates deleniti?
+                    </p>
+                </div>
+            </div>
+
+            <div class="box" onclick="OpenModal(3)">
+                <div class="image_box">
+                    <!-- imagem da box -->
+                    <img src="assets/media/image03.jpg" alt="imagemBox">
+                </div>
+                <div class="options_box">
+                    <!-- opções da box -->
+                    <h4>I HATE VEGANS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis fugit esse sequi rem quo iure veritatis dolor exercitationem incidunt dignissimos eum, quasi itaque, cum temporibus quam nesciunt unde voluptates deleniti?
+                    </p>
+                </div>
+            </div>
+
+            <div class="box" onclick="OpenModal(4)">
+                <div class="image_box">
+                    <!-- imagem da box -->
+                    <img src="assets/media/image04.jpg" alt="imagemBox">
+                </div>
+                <div class="options_box">
+                    <!-- opções da box -->
+                    <h4>LOSER READS HATER COMMENTS</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, beatae!</p>
+                </div>
+            </div>
+        </section>
+        <section class="content_right">
+            <div class="box_perfil">
+                <div class="box_perfil_person">
+                    <div class="image">
+                        <!-- foto do perfil -->
+                        <img src="assets/media/fotobruno.jpg" alt="Foto do Bruno">
+                    </div>
+                    <div class="description_perfil">
+                        <!-- descrição do perfil -->
+                        <h3>Eu me chamo Bruno😎</h3>
+                        <p>𝑩𝒓𝒖𝒏𝒐 | 𝒆𝒅𝒊𝒕𝒐ɾ 𝒅𝒆 𝒗𝒊𝒅𝒆𝒐𝒔
+                            🎯 Custo beneficio + Qualidade
+                            👨🏻‍💻Edição de Vídeos pra redes sociais, cursos, etc
+                            📨Peça seu orçamento no link abaixo ⬇️</p>
+                        <a href="https://linktr.ee/Brunol.editor" target="_blank">Saiba mais <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <div class="box_more_ornaments">
+                    <div class="block_more">
+                        <h3>Recomendações</h3>
+                        <div class="cube_more">
+                            <div class="image_block_more">
+                                <img src="assets/media/list01.jpg" alt="">
+                            </div>
+                            <div class="text_block_more">
+                                <h4>Gabriela Nogueira</h4>
+                                <p>Lorem ipsum dolor sit amet. <p><a href="#">Link para o site</a></p></p>
+                            </div>
+                        </div>
+
+                        <div class="cube_more">
+                            <div class="image_block_more">
+                                <img src="assets/media/list04.jpg" alt="">
+                            </div>
+                            <div class="text_block_more">
+                                <h4>Rafael William</h4>
+                                <p>Lorem ipsum dolor sit amet. <p><a href="#">Link para o site</a></p></p>
+                            </div>
+                        </div>
+
+                        <div class="cube_more">
+                            <div class="image_block_more">
+                                <img src="assets/media/list02.jpg" alt="">
+                            </div>
+                            <div class="text_block_more">
+                                <h4>Edinaldo Pereira</h4>
+                                <p>Lorem ipsum dolor sit amet. <p><a href="#">Link para o site</a></p></p>
+                            </div>
+                        </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="end_page">
+        <hr><br>
+        <p>Todos os direitos reservados - <span id="data">2022</span> - Desenvolvido por: <a href="https://www.instagram.com/code_ing.exe/" target="_blank">Rafael William</a></p>
+        <br>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+.ModalMenuContact{
+    width: 100vw;
+    height: 100vh;
+    background-color: #29292977;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 11;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0%;
+}
+.ModalMenuContactON{
+    opacity: 100%;
+    transition: .3s ease;
+    pointer-events: all;
+}
+.ModalContactBox{
+    background-color: var(--colorBase);
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    /* height: 300px; */
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--fontBase);
+}
+.ModalContactBox nav{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #29292977;
+}
+.ClickMailClass{
+    margin-top: 20px;
+    user-select: none;
+}
+#ClickMail{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.ModalContactBox nav ul{
+    list-style: none;
+    /* text-align: center; */
+}
+.ModalContactBox nav li{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.ModalContactBox nav li a{
+    color: var(--colorFontBase);
+    text-decoration: none;
+    padding: 5px 10px;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.253); */
+}
+.close{
+    position: absolute;
+    right: 10px;
+    font-size: 1.3rem;
+    top: 10px;
+    transition: .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close:hover{
+    color: red;
+    /* transform: scale(1.05); */
+    /* transform: rotate(45deg); */
+}
+.icon{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+@media screen and (max-width:630px) {
+    .icon{
+        margin-top: 20px;
+    }
+    .ClickMailClass{
+        text-align: center;
+    }
+}
+.icon i{
+    font-size: 3rem;
+    /* margin-bottom: 20px; */
+}
+.icon p{
+    font-size: 1.2rem;
+}
+
+
+/* menu */
+.menuModal{
+    width: 100vw;
+    height: 200px;
+    /* background-color: var(--colorBase); */
+    z-index: 10;
+    position: fixed;
+    margin-top: 85px;
+    top: -600px;
+    transition: .3s ease;
+    background-color: var(--colorBaseTwo);
+}
+.linksModal{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+.linksModal li{
+    display: flexbox;
+    margin-bottom: 5px;
+    font-family: var(--fontBase);
+}
+.linksModal li a{
+    color: var(--colorFontBase);
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
